@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/**
+ * Сброс стилей у кнопки.
+*/
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+/* отображаем курсор в виде руки при наведении */
+  cursor: pointer;
+}
+
+.menu{
+	margin: 0 auto;
+	margin-top: 100px;
+	max-width: 600px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu button{
+	padding: 5px 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.modal-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	transition: background .5s;
+	z-index: -1;
+}
+
+.modal-window{
+	position: absolute;
+	top: -200px;
+	left: calc(50% - 600px/2);
+	width: 600px;
+	height: 200px;
+	background: #727dff;
+	border: 1px solid #000;
+	border-radius: 5px;
+	transition: top .5s ;
+}
+
+.modal__header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+
+/*.modal__header__exit{
+	padding: 5px 10px;
+}*/
+
+.modal__main-text{
+	padding: 10px;
+}
+
+.modal__buttons{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.modal__buttons button{
+	padding: 3px 10px;
+	background: #f55555;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+
+.modal.open .modal-overlay{
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.modal.open .modal-window{
+	top: 100px;
+}
