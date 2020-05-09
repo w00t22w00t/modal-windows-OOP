@@ -1,9 +1,29 @@
 'use strict'
 let options = [
-	{title: 'Modal #1', mainText: 'Lorem ipsum dolor sit amet.', id: '1', closing: false},
-	{title: 'Modal #2', mainText: 'Lorem ipsum dolor sit amet, consectetur.', id: '2', closing: false},
-	{title: 'Modal #3', mainText: 'Lorem ipsum dolor sit.', id: '3', closing: false},
-	{title: 'Modal #4', mainText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas.', id: '4', closing: false},
+	{
+		title: 'Modal #1', 
+		mainText: 'Lorem ipsum dolor sit amet.', 
+		id: '1', 
+		closing: false
+	},
+	{
+		title: 'Modal #2', 
+		mainText: 'Lorem ipsum dolor sit amet, consectetur.', 
+		id: '2', 
+		closing: false
+	},
+	{
+		title: 'Modal #3', 
+		mainText: 'Lorem ipsum dolor sit.', 
+		id: '3', 
+		closing: false
+	},
+	{
+		title: 'Modal #4', 
+		mainText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas.', 
+		id: '4', 
+		closing: false
+	},
 ]
 
 class Modal{
